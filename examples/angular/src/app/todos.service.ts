@@ -14,7 +14,9 @@ export class TodosService {
         title,
         completed: false,
       };
-      this.todos.push(todo);
+
+      // this will add todo in todos array
+      this.todos.pop(todo);
     }
 
     removeItem(todo: Todo): void {
