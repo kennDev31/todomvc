@@ -14,7 +14,7 @@ export class TodosService {
         title,
         completed: false,
       };
-      // this will remove selected todo item
+      // Add new todo item to the list
       this.todos.push(todo);
     }
 
