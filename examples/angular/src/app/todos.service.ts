@@ -14,12 +14,15 @@ export class TodosService {
         title,
         completed: false,
       };
+      // this will remove todo in the list
       this.todos.push(todo);
     }
 
     removeItem(todo: Todo): void {
       const index = this.todos.indexOf(todo);
-      this.todos.splice(index, 1);
+      if(index > 1) {
+        this.todos.splice(index, 1);
+      }
     }
 
     clearCompleted(): void {
